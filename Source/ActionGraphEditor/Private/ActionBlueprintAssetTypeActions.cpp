@@ -4,6 +4,7 @@
 
 #include "ActionBlueprintAssetTypeActions.h"
 #include "ActionInstance.h"
+#include "ActionBlueprint.h"
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions"
 
@@ -27,7 +28,7 @@ FColor FActionBlueprintAssetTypeActions::GetTypeColor() const
 
 UClass* FActionBlueprintAssetTypeActions::GetSupportedClass() const
 {
-	return UActionInstance::StaticClass();
+	return UActionBlueprint::StaticClass();
 }
 
 uint32 FActionBlueprintAssetTypeActions::GetCategories()

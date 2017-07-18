@@ -3,7 +3,7 @@
 #include "IActionGraphEditor.h"
 
 #include "ActionGraphBlueprintAssetTypeActions.h"
-#include "ActionGraphInstance.h"
+#include "ActionGraphBlueprint.h"
 
 #define LOCTEXT_NAMESPACE "AssetTypeActions"
 
@@ -27,7 +27,7 @@ FColor FActionGraphBlueprintAssetTypeActions::GetTypeColor() const
 
 UClass* FActionGraphBlueprintAssetTypeActions::GetSupportedClass() const
 {
-	return UActionGraphInstance::StaticClass();
+	return UActionGraphBlueprint::StaticClass();
 }
 
 uint32 FActionGraphBlueprintAssetTypeActions::GetCategories()

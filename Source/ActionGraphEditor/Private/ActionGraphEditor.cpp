@@ -7,6 +7,7 @@
 #include "ActionGraphBlueprintThumbnailRenderer.h"
 #include "ActionBlueprintAssetTypeActions.h"
 #include "ActionGraphBlueprintAssetTypeActions.h"
+#include "ActionInstance.h"
 
 
 class FActionGraphEditorModule : public IActionGraphEditorModule

@@ -13,17 +13,19 @@
 	"EnabledByDefault" : false,
 	"CanContainContent" : true,
 	"IsBetaVersion" : true,
-	"Installed" : false,
-  "Modules": [
-    {
-      "Name": "ActionGraph",
-      "Type": "Developer",
-      "LoadingPhase": "Default"
-    },
-    {
-      "Name": "ActionGraphEditor",
-      "Type": "Editor",
-      "LoadingPhase": "PostEngineInit"
-    }
-  ]
+	"Installed" : true,
+	"RequiresBuildPlatform" : false,
+	"Modules":
+	[
+		{
+			"Name": "ActionGraph",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "ActionGraphEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
 }
