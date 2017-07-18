@@ -40,6 +40,7 @@ public class ActionGraphEditor : ModuleRules
 				"InputCore",
 				"UnrealEd",
 				"AssetTools",
+				"GraphEditor",
 			}
 		);
 		
