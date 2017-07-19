@@ -2,7 +2,7 @@
 	"FileVersion" : 3,
 	"Version" : 1,
 	"VersionName" : "0.1",
-	"FriendlyName" : "Action Graph Plugin",
+	"FriendlyName" : "Action Designer Plugin",
 	"Description" : "A plugin that assist in creating robust branching combo systems.",
 	"Category" : "Gameplay",
 	"CreatedBy" : "Norm Nazaroff",
@@ -11,19 +11,21 @@
 	"MarketplaceURL" : "",
 	"SupportURL" : "",
 	"EnabledByDefault" : false,
-	"CanContainContent" : false,
+	"CanContainContent" : true,
 	"IsBetaVersion" : true,
-	"Installed" : false,
-  "Modules": [
-    {
-      "Name": "ActionGraph",
-      "Type": "Developer",
-      "LoadingPhase": "Default"
-    },
-    {
-      "Name": "ActionGraphEditor",
-      "Type": "Editor",
-      "LoadingPhase": "PostEngineInit"
-    }
-  ]
+	"Installed" : true,
+	"RequiresBuildPlatform" : false,
+	"Modules":
+	[
+		{
+			"Name": "ActionDesigner",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "ActionDesignerEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		}
+	]
 }

@@ -9,9 +9,9 @@
 #include "IAssetTypeActions.h"
 #include "AssetTypeCategories.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(ActionGraphEditorLog, All, All)
+DECLARE_LOG_CATEGORY_EXTERN(ActionDesignerEditorLog, All, All)
 
-class IActionGraphEditorModule : public IModuleInterface
+class IActionDesignerEditorModule : public IModuleInterface
 {
 public:
 
@@ -21,9 +21,9 @@ public:
 	*
 	* @return Returns singleton instance, loading the module on demand if needed
 	*/
-	static inline IActionGraphEditorModule& Get()
+	static inline IActionDesignerEditorModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked<IActionGraphEditorModule>("ActionGraphEditor");
+		return FModuleManager::LoadModuleChecked<IActionDesignerEditorModule>("ActionDesignerEditor");
 	}
 
 	/**
@@ -33,6 +33,6 @@ public:
 	*/
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded("ActionGraphEditor");
+		return FModuleManager::Get().IsModuleLoaded("ActionDesignerEditor");
 	}
 };

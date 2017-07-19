@@ -2,21 +2,21 @@
 
 namespace UnrealBuildTool.Rules
 {
-	public class ActionGraph : ModuleRules
+	public class ActionDesigner : ModuleRules
 	{
-		public ActionGraph(ReadOnlyTargetRules Target) : base(Target)
+		public ActionDesigner(ReadOnlyTargetRules Target) : base(Target)
 		{
 			PublicIncludePaths.AddRange(
 				new string[]
 				{
-					"ActionGraph/Public",
+					"ActionDesigner/Public",
                 }
 			);
 
 			PrivateIncludePaths.AddRange(
 				new string[]
 				{
-					"ActionGraph/Private",
+					"ActionDesigner/Private",
 					"SlateCore/Public",
 				}
 			);

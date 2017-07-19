@@ -2,24 +2,24 @@
 
 using UnrealBuildTool;
 
-public class ActionGraphEditor : ModuleRules
+public class ActionDesignerEditor : ModuleRules
 {
-	public ActionGraphEditor(ReadOnlyTargetRules Target) : base(Target)
+	public ActionDesignerEditor(ReadOnlyTargetRules Target) : base(Target)
     {
 		
 		PublicIncludePaths.AddRange(
 			new string[]
 			{
-				"ActionGraph/Public",
-				"ActionGraphEditor/Public",
+				"ActionDesigner/Public",
+				"ActionDesignerEditor/Public",
 			}
 		);				
 		
 		PrivateIncludePaths.AddRange(
 			new string[]
 			{
-				"ActionGraph/Private",
-				"ActionGraphEditor/Private",
+				"ActionDesigner/Private",
+				"ActionDesignerEditor/Private",
 				"AssetTools/Public",
 			})
 		;			
@@ -28,7 +28,7 @@ public class ActionGraphEditor : ModuleRules
 			new string[]
 			{
 				"Core",
-				"ActionGraph",
+				"ActionDesigner",
 			}
 		);			
 		
@@ -40,6 +40,7 @@ public class ActionGraphEditor : ModuleRules
 				"InputCore",
 				"UnrealEd",
 				"AssetTools",
+				"GraphEditor",
 			}
 		);
 		

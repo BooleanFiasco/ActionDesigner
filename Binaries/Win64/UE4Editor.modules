@@ -1,10 +1,10 @@
 {
-	"Changelist" : 3466753,
+	"Changelist" : 3514769,
 	"CompatibleChangelist" : 3452394,
-	"BuildId" : "7370d9bf-5485-48ce-aacb-446748b048bc",
+	"BuildId" : "9d235d2e-0699-4a67-a724-267cd6977962",
 	"Modules" : 
 	{
-		"ActionGraph" : "UE4Editor-ActionGraph.dll",
-		"ActionGraphEditor" : "UE4Editor-ActionGraphEditor.dll"
+		"ActionDesigner" : "UE4Editor-ActionDesigner.dll",
+		"ActionDesignerEditor" : "UE4Editor-ActionDesignerEditor.dll"
 	}
 }

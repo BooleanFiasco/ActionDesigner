@@ -6,13 +6,13 @@
 #include "Modules/ModuleInterface.h"
 #include "Modules/ModuleManager.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(ActionGraphLog, All, All)
+DECLARE_LOG_CATEGORY_EXTERN(ActionDesignerLog, All, All)
 
 /**
  * The public interface to this module.  In most cases, this interface is only public to sibling modules 
  * within this plugin.
  */
-class IActionGraphModule : public IModuleInterface
+class IActionDesignerModule : public IModuleInterface
 {
 
 public:
@@ -23,9 +23,9 @@ public:
 	 *
 	 * @return Returns singleton instance, loading the module on demand if needed
 	 */
-	static inline IActionGraphModule& Get()
+	static inline IActionDesignerModule& Get()
 	{
-		return FModuleManager::LoadModuleChecked<IActionGraphModule>("ActionGraph");
+		return FModuleManager::LoadModuleChecked<IActionDesignerModule>("ActionDesigner");
 	}
 
 	/**
@@ -35,6 +35,6 @@ public:
 	 */
 	static inline bool IsAvailable()
 	{
-		return FModuleManager::Get().IsModuleLoaded("ActionGraph");
+		return FModuleManager::Get().IsModuleLoaded("ActionDesigner");
 	}
 };
