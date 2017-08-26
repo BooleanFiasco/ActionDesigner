@@ -1,12 +1,14 @@
 // Copyright 2017 Norm Nazaroff.
 
 using UnrealBuildTool;
+//using System.IO;
 
 public class ActionDesignerEditor : ModuleRules
 {
 	public ActionDesignerEditor(ReadOnlyTargetRules Target) : base(Target)
     {
-		
+		//var EngineDir = Path.GetFullPath(BuildConfiguration.RelativeEnginePath);
+
 		PublicIncludePaths.AddRange(
 			new string[]
 			{
@@ -21,6 +23,11 @@ public class ActionDesignerEditor : ModuleRules
 				"ActionDesigner/Private",
 				"ActionDesignerEditor/Private",
 				"AssetTools/Public",
+				"AssetTools/Private",
+				"BlueprintGraph",
+				"GraphEditor",
+				"Kismet",
+				//Path.Combine(EngineDir, @"Source/Developer/AssetTools/Private"),
 			})
 		;			
 		
@@ -41,6 +48,20 @@ public class ActionDesignerEditor : ModuleRules
 				"UnrealEd",
 				"AssetTools",
 				"GraphEditor",
+				"EditorStyle",
+				"EditorWidgets",
+				"Kismet",
+				"KismetCompiler",
+				"KismetWidgets",
+				"MainFrame",
+				"Projects",
+				"PropertyEditor",
+				"RHI",
+				"Slate",
+				"SlateCore",
+				"SourceControl",
+				"UnrealEd",
+				"WorkspaceMenuStructure",
 			}
 		);
 		

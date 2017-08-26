@@ -8,7 +8,7 @@
 #include "ActionBlueprintAssetTypeActions.h"
 #include "ActionGraphBlueprintAssetTypeActions.h"
 #include "ActionInstance.h"
-
+#include "ActionDesignerStyle.h"
 
 class FActionDesignerEditorModule : public IActionDesignerEditorModule
 {
@@ -44,6 +44,9 @@ FActionDesignerEditorModule::FActionDesignerEditorModule()
 void FActionDesignerEditorModule::StartupModule()
 {
 	UE_LOG(ActionDesignerEditorLog, Log, TEXT("Action designer editor module loaded."));
+
+	FActionDesignerStyle::Initialize();
+
 	UThumbnailManager::Get().RegisterCustomRenderer(UActionBlueprint::StaticClass(), UActionBlueprintThumbnailRenderer::StaticClass());
 	UThumbnailManager::Get().RegisterCustomRenderer(UActionGraphBlueprint::StaticClass(), UActionGraphBlueprintThumbnailRenderer::StaticClass());
 
